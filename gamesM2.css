@@ -1,0 +1,43 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+}
+.container{
+    width: 50rem;
+    max-width: 80%;
+    background-color: white;
+    padding: 0.625rem;
+    border-radius: 0.313rem;
+    box-shadow: 0 0 0.625rem 0.125rem;
+}
+
+.btn-grid{
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 0.625rem;
+    margin-top: 1.25rem;
+}
+
+.btn {
+    background-color: hsl(200, 100%, 50%);
+    border: 0.063rem solid hsl(200, 100%, 30%);
+    border-radius: 0.313rem;
+    padding: 00.313rem 0.625rem;
+    color: white;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
